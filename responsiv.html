@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>responsive layout</title>
+    <style>
+        *{
+            background-color: black;
+            font-size: 2rem;
+            color: #ff00fffd;
+        }
+        .container {
+            background-color: rgba(228, 35, 10, 0.8);
+            background-color: rgb(250, 110, 250);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .container .demo-box {
+            height: 200px;
+            width: 100%;
+            margin: 10px 0;
+            background-color: rgb(226, 229, 241);
+        }
+        @media screen and (min-device-width: 481px) and (max-device-width: 912px) {
+            .container {
+                background-color: turquoise;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .container .demo-box {
+                width: 48%;
+                margin: 10px 0;
+                background-color: rgb(21, 190, 57);
+            }
+        }
+
+        @media screen and (min-device-width:912px) {
+            .container {
+                background-color: rgb(200, 10, 55);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .container .demo-box {
+            height: 200px;
+            width: 23%;
+            margin: 10px 0;
+            background-color: rgb(10, 30, 100);
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <sction class="container">
+        <div class="demo-box"> hlo1</div>
+        <div class="demo-box">hlo2</div>
+        <div class="demo-box">hlo3</div>
+        <div class="demo-box">hlo4</div>
+    </sction>
+</body>
+
+</html>
