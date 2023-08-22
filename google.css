@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(to right, #0c3131, #606363);
+}
+.footer{
+    display: flex;
+    font-style: italic;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}  
+.content {
+    display: flex;
+    justify-content: center;
+}
+.ip-box{
+    margin-top: 50px;
+    height: 30px;
+    width: 300px;
+    background: linear-gradient(to right, #3a1561, #807986);
+}
+.btn{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 70px;
+    height: 25px;
+    background: linear-gradient(to right, #a31e1e, #331058);
+}

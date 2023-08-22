@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<style>
+    .content {
+        margin: 5px;
+        padding: 5px;
+        align-items: center;
+        color: black;
+        text-align: justify;
+    }
+
+    .container {
+        margin: 5px;
+        padding: 5px;
+        align-items: center;
+        background-color: blueviolet;
+        width: 20%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="content">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" class="form-control" required minlength="3">
+            </div>
+            <div class="content">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" class="form-control" required minlength="3">
+            </div>
+            <div class="content">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required minlength="5">
+            </div>
+            <div class="content">
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd" class="form-control" required minlength="8">
+            </div>
+            <div class="content">
+                <input type="submit" value="Register" class="btn btn-primary ">
+        </form>
+    </div>
+</body>
+
+</html>
